@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recipe Book</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="hero-section">
+            <h2>Welcome to Your Recipe Book</h2>
+            <p>Explore delicious recipes and start your culinary adventure!</p>
+            <button onclick="scrollToSection('recipes')">Discover Recipes</button>
+        </section>
+
+        <section id="recipes" class="recipes-section">
+            <h2>Our Popular Recipes</h2>
+            <div class="recipe-card" id="recipe1">
+                <img src="./images/manchurian.jpg" alt="Recipe 1">
+                <h3>Manchurian</h3>
+                <p>Manchurian is a popular Indo-Chinese dish that features deep-fried vegetable or meat balls Manchurian is a popular Indo-Chinese dish that features deep-fried vegetable or meat balls tossed in a savory and tangy sauce. The dish is typically characterized by its bold flavors, which come from ingredients like garlic, ginger, soy sauce, and a blend of spices.tossed in a savory and tangy sauce.</p>
+                <button onclick="showRecipeDetails('recipe1')">View Recipe</button>
+            </div>
+            <div class="recipe-card" id="recipe2">
+                <img src="./images/pasta.jpg" alt="Recipe 2">
+                <h3>Pasta</h3>
+                <p>Pasta is a versatile and beloved Italian dish made from durum wheat flour and water, typically formed into various shapes and sizes. It can be enjoyed fresh or dried and is a staple in many cuisines around the world. </p>
+                <button onclick="showRecipeDetails('recipe2')">View Recipe</button>
+            </div>
+            <div class="recipe-card" id="recipe3">
+                <img src="./images/momos.jpg" alt="Recipe 3">
+                <h3>Momos</h3>
+                <p>Momos are a popular type of steamed dumpling originating from Tibet and widely enjoyed in various regions of India, especially in the northeastern states. They are made from a simple dough of flour and water, which is rolled out into thin circles and filled with a variety of ingredients.</p>
+                <button onclick="showRecipeDetails('recipe3')">View Recipe</button>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have a question or want to share your recipe? Get in touch!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Recipe Book. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
