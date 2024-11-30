@@ -27,30 +27,61 @@
 
         <section id="recipes" class="recipes-section">
             <h2>Our Popular Recipes</h2>
+
+            <!-- Recipe 1: Manchurian -->
             <div class="recipe-card" id="recipe1">
-                <img src="./images/manchurian.jpg" alt="Recipe 1">
+                <img src="./images/manchurian.jpg" alt="Manchurian">
                 <h3>Manchurian</h3>
-                <p>Manchurian is a popular Indo-Chinese dish that features deep-fried vegetable or meat balls Manchurian is a popular Indo-Chinese dish that features deep-fried vegetable or meat balls tossed in a savory and tangy sauce. The dish is typically characterized by its bold flavors, which come from ingredients like garlic, ginger, soy sauce, and a blend of spices.tossed in a savory and tangy sauce.</p>
+                <p class="description">Manchurian is a popular Indo-Chinese dish made with deep-fried vegetable or meat balls. It's often served with a tangy, flavorful sauce made of soy sauce, garlic, and ginger, giving it a bold and savory taste.</p>
+                <p class="ingredients">Ingredients: Flour, Soy Sauce, Garlic, Ginger, Green Onions, Corn Flour</p>
+                <p class="instructions">1. Mix the ingredients for the balls. 2. Fry and set aside. 3. Prepare the sauce. 4. Toss the fried balls in the sauce.</p>
+                <p class="price">Price: ₹300</p>
                 <button onclick="showRecipeDetails('recipe1')">View Recipe</button>
+                <div class="recipe-details" id="recipe1-details" style="display: none;">
+                    <p><strong>Description:</strong> Manchurian is a popular Indo-Chinese dish made with deep-fried vegetable or meat balls. It's often served with a tangy, flavorful sauce made of soy sauce, garlic, and ginger, giving it a bold and savory taste.</p>
+                    <p><strong>Ingredients:</strong> Flour, Soy Sauce, Garlic, Ginger, Green Onions, Corn Flour</p>
+                    <p><strong>Instructions:</strong> 1. Mix the ingredients for the balls. 2. Fry and set aside. 3. Prepare the sauce. 4. Toss the fried balls in the sauce.</p>
+                </div>
             </div>
+
+            <!-- Recipe 2: Pasta -->
             <div class="recipe-card" id="recipe2">
-                <img src="./images/pasta.jpg" alt="Recipe 2">
+                <img src="./images/pasta.jpg" alt="Pasta">
                 <h3>Pasta</h3>
-                <p>Pasta is a versatile and beloved Italian dish made from durum wheat flour and water, typically formed into various shapes and sizes. It can be enjoyed fresh or dried and is a staple in many cuisines around the world. </p>
+                <p class="description">Pasta is a staple in Italian cuisine, made from durum wheat flour and water. It comes in many shapes and sizes, and can be paired with a variety of sauces, making it a versatile dish for any meal.</p>
+                <p class="ingredients">Ingredients: Pasta, Olive Oil, Garlic, Parmesan, Basil, Tomatoes</p>
+                <p class="instructions">1. Cook pasta. 2. Prepare sauce. 3. Combine and toss.</p>
+                <p class="price">Price: ₹280</p>
                 <button onclick="showRecipeDetails('recipe2')">View Recipe</button>
+                <div class="recipe-details" id="recipe2-details" style="display: none;">
+                    <p><strong>Description:</strong> Pasta is a staple in Italian cuisine, made from durum wheat flour and water. It comes in many shapes and sizes, and can be paired with a variety of sauces, making it a versatile dish for any meal.</p>
+                    <p><strong>Ingredients:</strong> Pasta, Olive Oil, Garlic, Parmesan, Basil, Tomatoes</p>
+                    <p><strong>Instructions:</strong> 1. Cook pasta. 2. Prepare sauce. 3. Combine and toss.</p>
+                </div>
             </div>
+
+            <!-- Recipe 3: Momos -->
             <div class="recipe-card" id="recipe3">
-                <img src="./images/momos.jpg" alt="Recipe 3">
+                <img src="./images/momos.jpg" alt="Momos">
                 <h3>Momos</h3>
-                <p>Momos are a popular type of steamed dumpling originating from Tibet and widely enjoyed in various regions of India, especially in the northeastern states. They are made from a simple dough of flour and water, which is rolled out into thin circles and filled with a variety of ingredients.</p>
+                <p class="description">Momos are a type of steamed dumpling, originating from Tibet and popular in many parts of India. They are often filled with vegetables, chicken, or pork, and served with spicy dipping sauces.</p>
+                <p class="ingredients">Ingredients: Flour, Ginger, Garlic, Cabbage, Carrot, Soy Sauce</p>
+                <p class="instructions">1. Prepare the dough. 2. Make the filling. 3. Steam the dumplings.</p>
+                <p class="price">Price: ₹250</p>
                 <button onclick="showRecipeDetails('recipe3')">View Recipe</button>
+                <div class="recipe-details" id="recipe3-details" style="display: none;">
+                    <p><strong>Description:</strong> Momos are a type of steamed dumpling, originating from Tibet and popular in many parts of India. They are often filled with vegetables, chicken, or pork, and served with spicy dipping sauces.</p>
+                    <p><strong>Ingredients:</strong> Flour, Ginger, Garlic, Cabbage, Carrot, Soy Sauce</p>
+                    <p><strong>Instructions:</strong> 1. Prepare the dough. 2. Make the filling. 3. Steam the dumplings.</p>
+                </div>
             </div>
+
         </section>
 
         <section id="contact" class="contact-section">
             <h2>Contact Us</h2>
             <p>Have a question or want to share your recipe? Get in touch!</p>
-            <form>
+            <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" required>
 
